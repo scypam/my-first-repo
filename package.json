@@ -1,0 +1,23 @@
+{
+  "name": "my-first-repo",
+  "version": "1.0.0",
+  "description": "``` # Мой первый проект Привет! Меня зовут Полина. Я учусь пользоваться Git и GitHub. ```",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scypam/my-first-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/scypam/my-first-repo/issues"
+  },
+  "homepage": "https://github.com/scypam/my-first-repo#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
