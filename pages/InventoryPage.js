@@ -24,6 +24,14 @@ class InventoryPage
     {
         return await this.title.textContent();
     }
+
+    async sortByPriceHighToLow() {
+        await this.page.locator('[data-test="product-sort-container"]').selectOption('hilo');
+    }
+
+    async getFirstItemName() {
+        return await this.page.locator('.inventory_item_name').first().textContent();
+    }
 }
 
 module.exports = InventoryPage;  

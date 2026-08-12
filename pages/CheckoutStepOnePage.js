@@ -9,12 +9,11 @@ class CheckoutStepOnePage
         this.continueButton = page.locator ('[data-test="continue"]');
     }
 
-    async fillUserInfo(firstName, lastName, postalCode)
-    {
-       await this.firstNameInput.fill(firstName);
-       await this.lastNameInput.fill(lastName);
-       await this.postalCodeInput.fill(postalCode);
-       await this.continueButton.click();
+    async fillUserInfo(firstName, lastName, postalCode) {
+        await this.firstNameInput.fill(firstName);
+        await this.lastNameInput.fill(lastName);
+        await this.postalCodeInput.fill(postalCode);
+        await this.continueButton.click();
     }
 }
 
