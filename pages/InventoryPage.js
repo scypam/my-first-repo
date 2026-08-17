@@ -1,7 +1,6 @@
 class InventoryPage
 {
-    constructor (page)
-    {
+    constructor (page) {
         this.page = page;
         this.title = page.locator ('[data-test="title"]');
         this.shoppingCartLink = page.locator ('[data-test="shopping-cart-link"]');
@@ -9,20 +8,17 @@ class InventoryPage
         this.inventoryProductsButton = page.locator ('.btn_inventory');
     }
 
-    async addItemToCart(itemName)
-    {
+    async addItemToCart(itemName) {
         const item = this.page.locator('.inventory_item').filter({ hasText: itemName });
         await item.locator('.btn_inventory').click();
     }
 
-    async openCart()
-    {
+    async openCart() {
         await this.shoppingCartLink.click();
     }
 
-    async getPageTitle()
-    {
-        return await this.title.textContent();
+    async getPageTitle() {
+        return this.title.textContent();
     }
 
     async sortByPriceHighToLow() {
@@ -30,7 +26,7 @@ class InventoryPage
     }
 
     async getFirstItemName() {
-        return await this.page.locator('.inventory_item_name').first().textContent();
+        return this.page.locator('.inventory_item_name').first().textContent();
     }
 }
 

@@ -1,7 +1,6 @@
 class CheckoutStepOnePage
 {
-    constructor (page)
-    {
+    constructor (page) {
         this.page = page;
         this.firstNameInput = page.locator ('[data-test="firstName"]');
         this.lastNameInput = page.locator ('[data-test="lastName"]');        

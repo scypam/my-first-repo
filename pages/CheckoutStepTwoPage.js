@@ -2,8 +2,7 @@ const { expect } = require('@playwright/test');
 
 class CheckoutStepTwoPage
 {
-    constructor (page)
-    {
+    constructor (page) {
         this.page = page;
         this.paymentInfoLabel = page.locator('[data-test="payment-info-label"]');
         this.shippingInfoLabel = page.locator('[data-test="shipping-info-label"]');
@@ -12,8 +11,7 @@ class CheckoutStepTwoPage
         this.finishButton = page.locator('[data-test="finish"]');
     }
 
-    async finishCheckout()
-    {
+    async finishCheckout() {
         await expect(this.paymentInfoLabel).toBeVisible();
         await expect(this.shippingInfoLabel).toBeVisible();
         await expect(this.totalLabel).toBeVisible();
