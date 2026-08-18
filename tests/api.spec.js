@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe ("API-тесты для Restful-booker", () => {
+test.describe ("API-тесты для Restful-booker @api", () => {
     test.describe.configure({ mode: 'serial' }); //для последовательного запуска тестов
     const baseURL = "https://restful-booker.herokuapp.com/";
     let bookingid; 

@@ -6,7 +6,7 @@ const CheckoutStepOnePage = require('../pages/CheckoutStepOnePage');
 const CheckoutStepTwoPage = require('../pages/CheckoutStepTwoPage');
 const CheckoutCompletePage = require('../pages/CheckoutCompletePage');
 
-test ('Сценарий покупки товара', async ({page}) => {
+test ('Сценарий покупки товара @ui', async ({page}) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const cartPage = new CartPage(page);
